@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="github"
-      fetch="https://github.com/"
+      fetch="ssh://git@github.com"
       sync-c="true"
       sync-tags="false" />
 
-  <remote fetch="https://git.codelinaro.org/clo/la" name="clo" review="codelinaro.org"/>
+  <remote name="clo"
+      fetch="https://git.codelinaro.org/clo/la"
+      review="codelinaro.org"/>
+
   <default remote="clo" revision="kernel.build.lnx.1.0" sync-j="8"/>
+  
   <project name="kernel/build" path="kernel_platform/build" revision="56594101567799238a9947ac5bc006e1b0d8595a" upstream="refs/heads/kernel.lnx.5.10.r1-rel"/>
   <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="181e33d43fe9c24ac396da7dc30cc854420890e8" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
   <project name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="10ab783184f77d3ea15bf666426a7138b0f62bfc" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
