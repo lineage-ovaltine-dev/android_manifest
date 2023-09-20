@@ -79,15 +79,15 @@
   </project>
 
   <!-- Proprietary -->
-  <project name="proprietary_qcom_vendor_kernel_devicetree" path="vendor/qcom/proprietary/devicetree" remote="ovaltine-github">
+  <project name="proprietary_qcom_vendor_kernel-devicetree" path="vendor/qcom/proprietary/devicetree" remote="ovaltine-github">
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="." />
   </project>
-  <project name="proprietary_qcom_vendor_kernel_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="ovaltine-github"/>
-  <project name="proprietary_qcom_vendor_kernel_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="ovaltine-github"/>
-  <project name="proprietary_qcom_vendor_kernel_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="ovaltine-github"/>
-  <project name="proprietary_qcom_vendor_kernel_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="ovaltine-github"/>
-  <project name="proprietary_qcom_vendor_kernel_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="ovaltine-github"/>
-  <project name="proprietary_qcom_vendor_kernel_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="ovaltine-github"/>
+  <project name="proprietary_qcom_vendor_kernel-video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="ovaltine-github"/>
 
   <!-- QCOM common -->
   <project name="android_device_qcom_common" path="device/qcom/common" remote="oplus-sm8450-kernel"/>
