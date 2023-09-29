@@ -6,7 +6,7 @@
       fetch="ssh://git@github.com/lineage-ovaltine-dev"
       sync-c="true"
       sync-tags="false"
-      revision="main"/>
+      revision="lineage-20"/>
 
   <!-- Kernel platform manifest -->
   <project name="kernel/build" path="kernel_platform/build" revision="56594101567799238a9947ac5bc006e1b0d8595a" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="clo"/>
