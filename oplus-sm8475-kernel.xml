@@ -11,7 +11,7 @@
   <!-- Kernel platform manifest -->
   <project name="kernel/build" path="kernel_platform/build" revision="56594101567799238a9947ac5bc006e1b0d8595a" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="clo"/>
   <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="146f9e657a5a5c87b25ba99dad1d6d8286e130c3" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" remote="clo"/>
-  <project name="android_kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="oplus-sm8450-kernel">
+  <project name="android_kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="ovaltine-github">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
     <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
@@ -25,7 +25,7 @@
   <project name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="c9f87ae369034b4942536a1c5bd62e4cd1d828e3" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel" clone-depth="1" remote="clo"/>
 
   <!-- Camera manifest -->
-  <project name="android_vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" upstream="refs/heads/camera-kernel.lnx.5.0.r2-rel" remote="oplus-sm8450-kernel">
+  <project name="android_vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" upstream="refs/heads/camera-kernel.lnx.5.0.r2-rel" remote="ovaltine-github">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/camera-kernel_board.mk" src="board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/camera-kernel_product.mk" src="product.mk"/>
   </project>
