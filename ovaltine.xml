@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="o"
+      fetch="ssh://git@github.com/lineage-ovaltine-dev"
+      sync-c="true"
+      sync-tags="false"
+      revision="lineage-20"/>
+
+  <remote name="ol"
+      fetch="https://gitlab.com/lineage-ovaltine-dev/proprietary_vendor_oneplus"
+      sync-c="true"
+      sync-tags="false"
+      revision="lineage-20"/>
+
+  <!-- Kernel Tree -->
+  <project name="android_kernel_oneplus_sm8475" path="kernel/oneplus/sm8450" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="o"></project>
+  <project name="android_kernel_oneplus_sm8450-devicetrees" path="kernel/oneplus/sm8450-devicetrees" remote="o"></project>
+  <project name="android_kernel_oneplus_sm8450-modules" path="kernel/oneplus/sm8450-modules" remote="o"></project>
+
+  <!-- Device Tree -->
+  <project name="android_device_oneplus_ovaltine" path="device/oneplus/ovaltine" remote="o"></project>
+  <project name="android_device_oneplus_sm8475-common" path="device/oneplus/sm8450-common" remote="o"></project>
+
+  <!-- Vendor Tree -->
+  <project name="ovaltine" path="vendor/oneplus/ovaltine" remote="ol"></project>
+  <project name="sm8450-common" path="vendor/oneplus/sm8450-common" remote="ol"></project>
+
+  <!-- Platform deps -->
+  <project name="android_hardware_oplus" path="hardware/oplus" remote="o"></project>
+</manifest>

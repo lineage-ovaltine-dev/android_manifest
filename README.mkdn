@@ -1,0 +1,74 @@
+LineageOS
+===========
+
+Getting started
+---------------
+
+To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+
+Initialize your local repository as you usually do for LineageOS :
+```
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+```
+To build for the Oneplus 10T, you will need specific repositories. Use these commands to sync them :
+```
+mkdir .repo/local_manifests && wget https://raw.githubusercontent.com/lineage-ovaltine-dev/android_manifest/master/ovaltine.xml -O .repo/local_manifests/ovaltine.xml
+```
+Then to sync up:
+```
+repo sync
+```
+Do not forget to `git lfs pull`, just in case:
+```
+repo forall -c 'git lfs pull'
+```
+
+
+Building for the Oneplus 10T
+------------------
+To build LineageOS for the Oneplus 10T, you will need to use a few commands.
+
+Load your build environnement using this command:
+```
+. build/envsetup.sh
+```
+Use the `repopick` command to cherry-pick `kalama` specific fixes:
+```
+repopick -t 13-ovaltine
+repopick -p 342864
+```
+You're now ready to start the build:
+```
+lunch lineage_ovaltine-userdebug
+m
+```
+
+Updating firmware
+---------------
+To update your device, download a full OTA package and extract the firmware images using [payload-dumper-go](https://github.com/ssut/payload-dumper-go). Then, boot your device into FastbootD mode, and flash these images :
+```
+fastboot flash --slot=all abl abl.img
+fastboot flash --slot=all aop_config aop_config.img
+fastboot flash --slot=all aop aop.img
+fastboot flash --slot=all bluetooth bluetooth.img
+fastboot flash --slot=all cpucp cpucp.img
+fastboot flash --slot=all devcfg devcfg.img
+fastboot flash --slot=all dsp dsp.img
+fastboot flash --slot=all engineering_cdt engineering_cdt.img
+fastboot flash --slot=all featenabler featenabler.img
+fastboot flash --slot=all hyp hyp.img
+fastboot flash --slot=all imagefv imagefv.img
+fastboot flash --slot=all keymaster keymaster.img
+fastboot flash --slot=all modem modem.img
+fastboot flash --slot=all oplus_sec oplus_sec.img
+fastboot flash --slot=all oplusstanvbk oplusstanvbk.img
+fastboot flash --slot=all qupfw qupfw.img
+fastboot flash --slot=all shrm shrm.img
+fastboot flash --slot=all splash splash.img
+fastboot flash --slot=all tz tz.img
+fastboot flash --slot=all uefi uefi.img
+fastboot flash --slot=all uefisecapp uefisecapp.img
+fastboot flash --slot=all xbl_config xbl_config.img
+fastboot flash --slot=all xbl_ramdump xbl_ramdump.img
+fastboot flash --slot=all xbl xbl.img
+```
