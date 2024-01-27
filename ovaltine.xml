@@ -4,13 +4,13 @@
       fetch="ssh://git@github.com/lineage-ovaltine-dev"
       sync-c="true"
       sync-tags="false"
-      revision="lineage-20"/>
+      revision="lineage-21"/>
 
   <remote name="ol"
-      fetch="https://gitlab.com/lineage-ovaltine-dev/proprietary_vendor_oneplus"
+      fetch="git@gitlab.com:lineage-ovaltine-dev/proprietary_vendor_oneplus"
       sync-c="true"
       sync-tags="false"
-      revision="lineage-20"/>
+      revision="lineage-21"/>
 
   <!-- Kernel Tree -->
   <project name="android_kernel_oneplus_sm8475" path="kernel/oneplus/sm8450" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="o"></project>
@@ -26,5 +26,5 @@
   <project name="sm8450-common" path="vendor/oneplus/sm8450-common" remote="ol"></project>
 
   <!-- Platform deps -->
-  <project name="android_hardware_oplus" path="hardware/oplus" remote="o"></project>
+  <project name="android_hardware_oplus" path="hardware/oplus"></project>
 </manifest>
