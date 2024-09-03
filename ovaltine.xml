@@ -13,13 +13,13 @@
     revision="upsilon"/>
 
   <!-- Kernel Tree -->
-  <project name="android_kernel_oneplus_sm8475" path="kernel/oneplus/sm8450" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="lod"></project>
+  <project name="android_kernel_oneplus_sm8450" path="kernel/oneplus/sm8450" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="lod"></project>
   <project name="android_kernel_oneplus_sm8450-devicetrees" path="kernel/oneplus/sm8450-devicetrees" remote="lod"></project>
   <project name="android_kernel_oneplus_sm8450-modules" path="kernel/oneplus/sm8450-modules" remote="lod"></project>
 
   <!-- Device Tree -->
   <project name="android_device_oneplus_ovaltine" path="device/oneplus/ovaltine" remote="lod"></project>
-  <project name="android_device_oneplus_sm8475-common" path="device/oneplus/sm8450-common" remote="lod"></project>
+  <project name="android_device_oneplus_sm8450-common" path="device/oneplus/sm8450-common" remote="lod"></project>
 
   <!-- Vendor Tree -->
   <project name="ovaltine" path="vendor/oneplus/ovaltine" remote="lod-gl"></project>
